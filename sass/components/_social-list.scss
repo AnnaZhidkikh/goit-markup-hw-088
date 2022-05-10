@@ -1,0 +1,35 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+  }
+  .team__social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-list__link {
+    @extend %align;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms var(--time-distribution);
+  
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }  
+  .social-list__icon {
+    fill: #AFB1B8;
+    transition: fill 250ms var(--time-distribution);
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+      fill: white;
+   }
+  }
+  @media screen and (min-width: 1200px) {
+    .social-list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }

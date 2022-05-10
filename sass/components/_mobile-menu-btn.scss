@@ -1,0 +1,12 @@
+.mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: fill 250ms var(--time-distribution);
+  
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }

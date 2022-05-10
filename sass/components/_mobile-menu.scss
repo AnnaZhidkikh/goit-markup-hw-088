@@ -1,0 +1,109 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--primary-section-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear, visability 250ms linear;
+    z-index: 1;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: fill 250ms var(--time-distribution);
+  
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  } 
+
+.mobile-menu__navigation-list-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+ .mobile-menu__navigation-list-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+    margin-left: 25px;
+    
+    transition: color 250ms var(--time-distribution);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+ }
+ .mobile-menu__navigation-list-link-current {
+     color: var(--accent-color);
+ }
+ .mobile-menu__contact-list-item {
+     display: flex;
+     margin-left: 25px;
+     
+ }
+ .mobile-menu__contact-list-item:not(:last-child) {
+    margin-bottom: 32px;
+ }
+ .mobile-menu__contact-link-tel {
+    margin-top: 302px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    
+ }
+ .mobile-menu__contact-link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    margin-bottom: 64px;
+ }
+ .mobile-menu__social-list {
+     display: flex;
+ }
+ .mobile-menu__social-list-item {
+    padding-right: 10px;   
+    padding-left: 10px;
+ }
+ .mobile-menu__social-list-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+ }
+ .mobile-menu__social-list-item:first-child {
+     margin-left: 15px;
+
+ }
+ .mobile-menu__social-list-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+ }

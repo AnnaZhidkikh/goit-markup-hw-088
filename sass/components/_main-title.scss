@@ -1,0 +1,20 @@
+.main-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-section-color);
+    margin-bottom: 30px;
+
+//1200px+
+@media screen and (min-width:1200px) {
+  font-size: 44px;
+  line-height: 1.36;
+ }
+}
+
+  
+  
+ 

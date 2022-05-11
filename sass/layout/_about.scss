@@ -1,5 +1,4 @@
 .section-about__title {
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -27,7 +26,6 @@
 @media screen and (max-width: 767px) {
   .section-content-icon {
     width: 450px;
-    
   }
   .section-about {
     display: none;
@@ -50,6 +48,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
